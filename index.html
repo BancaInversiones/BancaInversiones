@@ -3196,13 +3196,17 @@ function recalc(){
 
 
 const EXECUTIVES = [
-  {name:'Diego Vargas', role:'Analista Comercial', email:'dvargas@grupointeligencia.com', company:'Grupo Inteligencia', phone:'56929427412'},
-  {name:'Marcelo Hernandez', role:'Analista Comercial', email:'mhernandez@grupointeligencia.com', company:'Grupo Inteligencia', phone:'56927389827'},
-  {name:'Alexander Chapanoff', role:'Ejecutivo Comercial', email:'alexanderc@grupointeligencia.com', company:'Grupo Inteligencia', phone:'56926882393'},
-  {name:'Fernando Iturriaga', role:'Ejecutivo Comercial', email:'fiturriaga@grupointeligencia.com', company:'Grupo Inteligencia', phone:'56929058993'},
-  {name:'Mauricio Díaz', role:'Ejecutivo Comercial', email:'mdiaz@grupointeligencia.com', company:'Grupo Inteligencia', phone:'56929541383'},
-  {name:'Martin Franz Alvarez', role:'Ejecutivo Comercial', email:'martin.franz@grupointeligencia.com', company:'Grupo Inteligencia', phone:'56983735856'},
-  {name:'Marcos Arias Iturra', role:'Ejecutivo Comercial', email:'marcos.arias@grupointeligencia.com', company:'Grupo Inteligencia', phone:'56983735857'}
+  {key:'diego_vargas', name:'Diego Vargas', role:'Analista Comercial', email:'dvargas@grupointeligencia.com', company:'Grupo Inteligencia', phone:'56929427412'},
+  {key:'marcelo_hernandez', name:'Marcelo Hernández', role:'Analista Comercial', email:'mhernandez@grupointeligencia.com', company:'Grupo Inteligencia', phone:'56927389827'},
+  {key:'alexander_chapanoff', name:'Alexander Chapanoff', role:'Ejecutivo Comercial', email:'alexanderc@grupointeligencia.com', company:'Grupo Inteligencia', phone:'56926882393', linkedin:'https://www.linkedin.com/in/a-chapanoff', profession:'Ingeniero Comercial', photoId:'1eixrGoN9b_fVoI0ZiuqF97IoDHP2PHMF'},
+  {key:'fernando_iturriaga', name:'Fernando Iturriaga', role:'Ejecutivo Comercial', email:'fiturriaga@grupointeligencia.com', company:'Grupo Inteligencia', phone:'56929058993', linkedin:'https://www.linkedin.com/in/fernandojoseiturriaga', profession:'Ingeniero Comercial', photoId:'16ry_ahNbAO-ULy9lrR620AO2Re5CCLsd'},
+  {key:'mauricio_diaz', name:'Mauricio Díaz', role:'Ejecutivo Comercial', email:'mdiaz@grupointeligencia.com', company:'Grupo Inteligencia', phone:'56972110654', linkedin:'https://www.linkedin.com/in/mauricio-d%C3%ADaz-m%C3%A9ndez-6444b2328/', profession:'Ingeniero en Administración mención Finanzas', photoId:'1K-Z7aWfVnzXITJkgkgYfDuVmAT8mN2FC'},
+  {key:'martin_franz_alvarez', name:'Martín Franz Álvarez', role:'Ejecutivo Comercial', email:'martin.franz@grupointeligencia.com', company:'Grupo Inteligencia', phone:'56983735856', linkedin:'https://www.linkedin.com/in/mart%C3%ADn-franz-alvarez-20ab13177/', profession:'Ingeniero Comercial con Magíster Financiero', photoId:'1n8eSLoMKLGq3BIkG_vDLKY2dY2eEFkrC'},
+  {key:'marcos_arias_iturra', name:'Marcos Arias Iturra', role:'Ejecutivo Comercial', email:'marcos.arias@grupointeligencia.com', company:'Grupo Inteligencia', phone:'56983735857', linkedin:'https://www.linkedin.com/in/marcos-arias-iturra', profession:'Ingeniero en Administración mención Finanzas', photoId:'1E5bLbt2Nby5aDk4dRa2KjqGyB-x8ylIZ'},
+  {key:'javiera_valderrama', name:'Javiera Valderrama', role:'Ejecutivo Comercial', email:'javiera.valderrama@grupointeligencia.com', company:'Grupo Inteligencia', phone:'56988129997', linkedin:'https://www.linkedin.com/in/javiera-bel%C3%A9n-valderrama-vargas-13038b223'},
+  {key:'maximiliano_stein', name:'Maximiliano Stein', role:'Ejecutivo Comercial', email:'maximiliano.stein@grupointeligencia.com', company:'Grupo Inteligencia', phone:'56966889346', linkedin:'https://www.linkedin.com/in/maximiliano-stein-goecke-02b6b7378'},
+  {key:'smiliak_zapata', name:'Smiliak Zapata', role:'Ejecutivo Comercial', email:'smiliak.zapata@grupointeligencia.com', company:'Grupo Inteligencia', phone:'56949579271', linkedin:'https://www.linkedin.com/in/smiliak-zapata-230721418/'},
+  {key:'sebastian_mendez', name:'Sebastián Méndez', role:'Jefe Comercial', email:'smendez@grupointeligencia.com', company:'Grupo Inteligencia', phone:'56930398295', linkedin:'https://www.linkedin.com/in/sebasti%C3%A1n-sergio-m%C3%A9ndez-estay-00204353/'}
 ];
 
 function formatPhoneCL(raw){
