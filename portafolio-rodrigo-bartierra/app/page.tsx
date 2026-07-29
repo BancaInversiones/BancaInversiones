@@ -163,9 +163,8 @@ export default function Home() {
             muted
             playsInline
             preload="auto"
-            poster="/assets/rodrigo-memoji-poster.jpg"
           >
-            <source src="/assets/rodrigo-memoji-v2.mp4" type="video/mp4" />
+            <source src="/assets/rodrigo-memoji-v3.mp4" type="video/mp4" />
           </video>
         </div>
 
