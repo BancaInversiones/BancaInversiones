@@ -165,7 +165,7 @@ export default function Home() {
             preload="auto"
             poster="/assets/rodrigo-memoji-poster.jpg"
           >
-            <source src="/assets/rodrigo-memoji.mp4" type="video/mp4" />
+            <source src="/assets/rodrigo-memoji-v2.mp4" type="video/mp4" />
           </video>
         </div>
 
