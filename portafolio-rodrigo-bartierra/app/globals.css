@@ -209,7 +209,6 @@ body {
 }
 
 .profile-mix__intro > p,
-.selected-work__heading > p,
 .contact-cta > p {
   margin: 0 0 1rem;
   color: #888;
@@ -220,7 +219,6 @@ body {
 }
 
 .profile-mix__intro h2,
-.selected-work__heading h2,
 .contact-cta h2 {
   margin: 0;
   font-size: clamp(2.8rem, 6vw, 6rem);
@@ -229,8 +227,7 @@ body {
   line-height: 0.92;
 }
 
-.profile-mix__intro > span,
-.selected-work__heading > span {
+.profile-mix__intro > span {
   display: block;
   max-width: 720px;
   margin-top: 1.5rem;
@@ -242,7 +239,7 @@ body {
 .profile-mix__grid {
   display: grid;
   max-width: 1180px;
-  margin: clamp(3rem, 6vw, 5.5rem) auto 0;
+  margin: clamp(2.5rem, 5vw, 4.25rem) auto 0;
   border-top: 1px solid #333;
   border-left: 1px solid #333;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -250,8 +247,8 @@ body {
 
 .profile-role {
   position: relative;
-  min-height: 275px;
-  padding: 1.6rem;
+  min-height: 238px;
+  padding: clamp(1.2rem, 1.8vw, 1.45rem);
   border-right: 1px solid #333;
   border-bottom: 1px solid #333;
   transition: background-color 240ms ease, color 240ms ease, transform 240ms ease;
@@ -259,17 +256,19 @@ body {
 
 .profile-role strong {
   display: block;
-  margin-top: 0.75rem;
-  font-size: clamp(1.45rem, 2.5vw, 2.25rem);
+  margin-top: 0.65rem;
+  font-size: clamp(1.25rem, 1.75vw, 1.75rem);
   font-weight: 450;
   letter-spacing: -0.05em;
+  line-height: 1.08;
+  overflow-wrap: anywhere;
 }
 
 .profile-role p {
-  margin: 2.5rem 0 0;
+  margin: 1.45rem 0 0;
   color: #999;
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: clamp(0.76rem, 0.9vw, 0.84rem);
+  line-height: 1.48;
   transition: color 240ms ease;
 }
 
@@ -301,154 +300,6 @@ body {
   color: #666;
 }
 
-.selected-work {
-  padding: clamp(4.5rem, 8vw, 8rem) max(1.25rem, calc((100vw - 1180px) / 2));
-  background: #f3f3f0;
-  color: #050505;
-}
-
-.selected-work__heading {
-  max-width: 980px;
-  margin-bottom: clamp(3rem, 6vw, 5.5rem);
-}
-
-.selected-work__heading > span {
-  color: #555;
-}
-
-.projects-grid {
-  display: grid;
-  max-width: 1180px;
-  margin: 0 auto;
-  gap: clamp(2.5rem, 6vw, 6rem) clamp(1.2rem, 3vw, 2.5rem);
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.project-card {
-  min-width: 0;
-}
-
-.project-card:nth-child(even) {
-  margin-top: clamp(3rem, 8vw, 8rem);
-}
-
-.project-card:last-child {
-  max-width: calc(50% - 1.25rem);
-  margin-inline: auto;
-  grid-column: 1 / -1;
-}
-
-.project-card__visual {
-  position: relative;
-  display: flex;
-  min-height: clamp(300px, 42vw, 520px);
-  align-items: flex-end;
-  justify-content: space-between;
-  padding: clamp(1.25rem, 3vw, 2rem);
-  overflow: hidden;
-  background:
-    radial-gradient(circle at 75% 20%, rgb(255 255 255 / 16%), transparent 28%),
-    linear-gradient(145deg, #060606 10%, #262626 54%, #080808);
-  color: #fff;
-}
-
-.project-card__visual::before {
-  position: absolute;
-  width: 68%;
-  aspect-ratio: 1;
-  border: 1px solid rgb(255 255 255 / 20%);
-  border-radius: 50%;
-  content: "";
-  inset: 16% auto auto 16%;
-  transition: transform 700ms cubic-bezier(0.2, 0.75, 0.2, 1);
-}
-
-.project-card:nth-child(2) .project-card__visual {
-  background:
-    linear-gradient(135deg, transparent 48%, rgb(255 255 255 / 16%) 49% 51%, transparent 52%),
-    #161616;
-}
-
-.project-card:nth-child(3) .project-card__visual {
-  background:
-    repeating-linear-gradient(90deg, transparent 0 9%, rgb(255 255 255 / 8%) 9% 9.3%),
-    #0b0b0b;
-}
-
-.project-card:nth-child(4) .project-card__visual {
-  background:
-    radial-gradient(circle at center, rgb(255 255 255 / 18%) 0 1%, transparent 1.3%),
-    #191919;
-  background-size: 26px 26px;
-}
-
-.project-card:hover .project-card__visual::before {
-  transform: scale(1.2) translate(8%, -5%);
-}
-
-.project-card__visual > span {
-  position: relative;
-  font-size: clamp(4rem, 10vw, 8rem);
-  font-weight: 250;
-  letter-spacing: -0.08em;
-  line-height: 0.72;
-}
-
-.project-card__visual i {
-  position: relative;
-  font-size: 0.65rem;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-}
-
-.project-card__content {
-  padding-top: 1.5rem;
-}
-
-.project-card__content > p {
-  margin: 0 0 0.75rem;
-  color: #666;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.project-card__content h3 {
-  margin: 0;
-  font-size: clamp(2rem, 4.2vw, 4rem);
-  font-weight: 430;
-  letter-spacing: -0.06em;
-  line-height: 0.95;
-}
-
-.project-card__content > span {
-  display: block;
-  max-width: 540px;
-  margin-top: 1rem;
-  color: #444;
-  line-height: 1.5;
-}
-
-.project-card__content small {
-  display: block;
-  margin-top: 1.25rem;
-  color: #777;
-  font-size: 0.72rem;
-  line-height: 1.5;
-}
-
-.project-card__action {
-  margin-top: 1.5rem;
-  padding-top: 1rem;
-  border-top: 1px solid #ccc;
-  font-size: 0.78rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .experience {
   position: relative;
   overflow: hidden;
@@ -477,12 +328,13 @@ body {
 }
 
 .experience__heading h2 {
-  max-width: 800px;
+  max-width: none;
   margin: 0 auto;
-  font-size: clamp(2rem, 4.5vw, 4.75rem);
+  font-size: clamp(1.45rem, 4vw, 4.25rem);
   font-weight: 350;
   letter-spacing: -0.065em;
   line-height: 0.95;
+  white-space: nowrap;
 }
 
 .marquee {
@@ -605,7 +457,7 @@ body {
 
 .skill-card {
   position: relative;
-  min-height: 205px;
+  min-height: 190px;
   padding: clamp(1.25rem, 2.2vw, 1.75rem);
   overflow: hidden;
   border-right: 1px solid #333;
@@ -630,11 +482,12 @@ body {
 
 .skill-card strong {
   display: block;
-  max-width: 90%;
-  font-size: clamp(1.3rem, 2vw, 1.9rem);
+  max-width: calc(100% - 2rem);
+  min-height: 2.5em;
+  font-size: clamp(1.18rem, 1.55vw, 1.48rem);
   font-weight: 450;
   letter-spacing: -0.05em;
-  line-height: 1;
+  line-height: 1.1;
   transition: transform 240ms ease;
 }
 
@@ -708,8 +561,8 @@ body {
 
 .platform {
   position: relative;
-  min-height: 84px;
-  padding: 1rem 1.05rem;
+  min-height: 88px;
+  padding: 1.1rem;
   overflow: hidden;
   border: 1px solid #333;
   background: #0e0e0e;
@@ -720,8 +573,10 @@ body {
 
 .platform strong {
   display: block;
-  font-size: 0.95rem;
+  min-height: 1.25em;
+  font-size: 0.96rem;
   font-weight: 600;
+  line-height: 1.25;
 }
 
 .platform span {
@@ -776,14 +631,17 @@ body {
 }
 
 .contact-cta__actions a {
-  display: inline-flex;
+  display: grid;
   width: 50%;
   min-width: 0;
-  min-height: 3.25rem;
-  padding: 0.8rem 1.15rem;
+  min-height: 3.75rem;
+  padding: 0.85rem 1.35rem;
   border: 1px solid #050505;
+  border-radius: 999px !important;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  grid-auto-flow: column;
+  grid-template-columns: auto auto;
   gap: 0.75rem;
   color: #fff;
   font-size: 0.78rem;
@@ -797,6 +655,11 @@ body {
   width: 1.2rem;
   height: 1.2rem;
   flex: 0 0 auto;
+}
+
+.contact-cta__actions span {
+  display: block;
+  text-align: center;
 }
 
 .contact-cta__calendar {
@@ -914,8 +777,6 @@ body {
   .experience__heading,
   .profile-mix__intro,
   .profile-mix__grid,
-  .selected-work__heading,
-  .projects-grid,
   .capabilities__intro,
   .skills-grid,
   .platforms,
@@ -1024,8 +885,7 @@ body {
     width: 185px;
   }
 
-  .profile-mix,
-  .selected-work {
+  .profile-mix {
     padding-inline: 1rem;
   }
 
@@ -1035,28 +895,11 @@ body {
 
   .profile-role {
     min-height: auto;
-    padding: 1.4rem;
+    padding: 1.2rem;
   }
 
   .profile-role p {
-    margin-top: 1.5rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .project-card:nth-child(even) {
-    margin-top: 0;
-  }
-
-  .project-card:last-child {
-    max-width: none;
-    grid-column: auto;
-  }
-
-  .project-card__visual {
-    min-height: 340px;
+    margin-top: 1rem;
   }
 
   .capabilities {
@@ -1068,7 +911,7 @@ body {
   }
 
   .skill-card {
-    min-height: 185px;
+    min-height: 165px;
   }
 
   .skill-card__category {
@@ -1095,6 +938,8 @@ body {
   .contact-cta__actions a {
     min-height: 3rem;
     padding: 0.7rem 0.55rem;
+    border-radius: 999px !important;
+    grid-template-columns: auto minmax(0, auto);
     gap: 0.4rem;
     justify-content: center;
     font-size: clamp(0.56rem, 2.6vw, 0.7rem);
@@ -1105,6 +950,11 @@ body {
   .contact-cta__actions svg {
     width: 1.05rem;
     height: 1.05rem;
+  }
+
+  .experience__heading h2 {
+    font-size: clamp(1.18rem, 5.7vw, 1.55rem);
+    letter-spacing: -0.045em;
   }
 }
 
@@ -1155,8 +1005,6 @@ body {
   .identity,
   .profile-mix__intro,
   .profile-mix__grid,
-  .selected-work__heading,
-  .projects-grid,
   .experience__heading,
   .marquee,
   .capabilities__intro,
