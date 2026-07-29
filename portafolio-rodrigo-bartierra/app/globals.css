@@ -991,11 +991,6 @@ body {
     scroll-behavior: auto;
   }
 
-  .portrait {
-    background: #fff url("/assets/rodrigo-memoji-poster.jpg") center / cover
-      no-repeat;
-  }
-
   .marquee__track--brands {
     animation: brand-marquee 82s linear infinite;
   }
