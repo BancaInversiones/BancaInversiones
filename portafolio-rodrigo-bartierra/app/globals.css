@@ -881,6 +881,16 @@ body {
     height: 68px;
   }
 
+  .marquee__track--brands {
+    animation: brand-marquee 68s linear infinite;
+    animation-play-state: running;
+  }
+
+  .marquee__track--companies {
+    animation: company-marquee 20s linear infinite;
+    animation-play-state: running;
+  }
+
   .company {
     width: 185px;
   }
@@ -981,17 +991,17 @@ body {
     scroll-behavior: auto;
   }
 
-  .portrait__video {
-    visibility: hidden;
-  }
-
   .portrait {
     background: #fff url("/assets/rodrigo-memoji-poster.jpg") center / cover
       no-repeat;
   }
 
-  .marquee__track {
-    animation-play-state: paused;
+  .marquee__track--brands {
+    animation: brand-marquee 82s linear infinite;
+  }
+
+  .marquee__track--companies {
+    animation: company-marquee 24s linear infinite;
   }
 
   .skill-card,
@@ -1006,7 +1016,6 @@ body {
   .profile-mix__intro,
   .profile-mix__grid,
   .experience__heading,
-  .marquee,
   .capabilities__intro,
   .skills-grid,
   .platforms,
