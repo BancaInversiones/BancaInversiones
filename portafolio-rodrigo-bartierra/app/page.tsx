@@ -162,7 +162,7 @@ export default function Home() {
             loop
             muted
             playsInline
-            preload="metadata"
+            preload="auto"
             poster="/assets/rodrigo-memoji-poster.jpg"
           >
             <source src="/assets/rodrigo-memoji.mp4" type="video/mp4" />
